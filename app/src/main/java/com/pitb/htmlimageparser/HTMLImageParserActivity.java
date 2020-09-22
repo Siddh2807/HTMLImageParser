@@ -85,8 +85,6 @@ public class HTMLImageParserActivity extends AppCompatActivity {
                 String d = data.substring(imageIndex, data.length());
                 htmlTxt = Html.fromHtml(d.split(imgRegex)[1]);
                 imageParser("", htmlTxt);
-
-
             }
         } catch (IOException e) {
             viewDialog.hideDialog();
